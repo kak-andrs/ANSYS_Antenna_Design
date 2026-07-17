@@ -1,0 +1,115 @@
+# HFSS Project Specification
+
+## Yagi-Uda Antenna Design at 10.9 GHz
+
+## 1. Project Overview
+
+This project involves the design and electromagnetic simulation of a **Yagi-Uda directional antenna** using **ANSYS High Frequency Structure Simulator (HFSS)**.
+
+The antenna is designed to operate at **10.9 GHz** and its performance is evaluated based on key RF parameters including return loss, gain, directivity, radiation pattern, and impedance matching.
+
+## 2. Software and Tools
+
+**Simulation Software:**
+
+* ANSYS HFSS
+
+**Analysis Tools:**
+
+* MATLAB (optional for post-processing)
+
+**Documentation Platform:**
+
+* GitHub
+
+## 3. Antenna Design Specifications
+
+| Parameter           | Description                          |
+| ------------------- | ------------------------------------ |
+| Antenna Type        | Yagi-Uda Directional Antenna         |
+| Operating Frequency | 10.9 GHz                             |
+| Simulation Type     | Driven Modal                         |
+| Unit System         | Millimeters (mm)                     |
+| Radiating Elements  | Reflector, Driven Element, Directors |
+
+## 4. Antenna Structure
+
+The Yagi-Uda antenna consists of:
+
+* **Reflector:** Improves forward radiation by reducing backward radiation.
+* **Driven Element:** The active radiating element connected to the excitation source.
+* **Directors:** Additional elements used to increase antenna directivity and gain.
+
+## 5. Material Setup
+
+| Component          | Material                                  |
+| ------------------ | ----------------------------------------- |
+| Antenna Elements   | Copper / Perfect Electric Conductor (PEC) |
+| Boom               | Aluminum / PEC                            |
+| Surrounding Medium | Air                                       |
+
+## 6. Simulation Setup
+
+The HFSS simulation is configured as follows:
+
+* Solution Type: Driven Modal
+* Operating Frequency: 10.9 GHz
+* Frequency Sweep: 9 GHz – 12 GHz
+* Adaptive Mesh Refinement: Enabled
+* Convergence Target: ΔS ≤ 0.02
+
+## 7. Excitation and Boundary Conditions
+
+### Excitation
+
+A **50 Ω lumped port** is assigned to the driven element to evaluate antenna impedance characteristics and S-parameters.
+
+### Boundary Conditions
+
+A radiation boundary is applied using an air region surrounding the antenna structure to allow electromagnetic wave propagation.
+
+## 8. Design Methodology
+
+The antenna design process follows these steps:
+
+1. Selection of operating frequency.
+2. Determination of initial antenna dimensions.
+3. Creation of antenna geometry in HFSS.
+4. Assignment of material properties.
+5. Configuration of excitation and boundaries.
+6. Mesh generation and refinement.
+7. Electromagnetic simulation.
+8. Analysis of antenna performance.
+
+## 9. Performance Parameters
+
+The antenna performance is evaluated using:
+
+* Return Loss (S11)
+* Voltage Standing Wave Ratio (VSWR)
+* Input Impedance
+* Gain
+* Directivity
+* Radiation Pattern
+* Radiation Efficiency
+* Surface Current Distribution
+* Electric Field Distribution
+
+## 10. Expected Outcomes
+
+The simulation is expected to demonstrate:
+
+* Operation around 10.9 GHz.
+* Good impedance matching.
+* Directional radiation characteristics.
+* Improved gain compared with omnidirectional antennas.
+
+## 11. Applications
+
+Potential applications include:
+
+* Microwave communication links
+* Point-to-point wireless systems
+* RF experimental studies
+* Directional communication systems
+* High-frequency wireless applications
