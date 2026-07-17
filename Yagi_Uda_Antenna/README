@@ -1,1 +1,96 @@
+# Yagi-Uda Antenna Design
 
+## Overview
+
+This project presents the design and electromagnetic simulation of a **Yagi-Uda directional antenna** operating at **10.9 GHz** using **ANSYS HFSS**.
+
+The objective was to design a directional antenna and evaluate its RF performance through electromagnetic simulation. Key performance metrics such as return loss (S11), VSWR, gain, directivity, and radiation pattern were analyzed to assess the antenna's suitability for high-frequency wireless communication applications.
+
+## Objectives
+
+- Design a Yagi-Uda antenna operating at **10.9 GHz**.
+- Model and simulate the antenna using ANSYS HFSS.
+- Analyze impedance matching through S11 and VSWR.
+- Evaluate gain, directivity, and radiation characteristics.
+- Document the design process and simulation results.
+
+## Software Used
+
+- ANSYS HFSS
+- MATLAB (optional for post-processing)
+- Git & GitHub
+
+## Operating Frequency
+
+| Parameter | Value |
+|-----------|-------|
+| Operating Frequency | **10.9 GHz** |
+| Simulation Type | Driven Modal |
+| Units | Millimeters (mm) |
+
+## Project Structure
+
+```text
+Yagi_Uda_Antenna/
+
+├── HFSS_Project/
+│   └── yagi_uda_10_9GHz.aedt
+│
+├── Images/
+│   ├── geometry.png
+│   ├── s11_plot.png
+│   ├── radiation_pattern.png
+│   └── gain_plot.png
+│
+├── Results/
+│   ├── S11.csv
+│   ├── Gain.csv
+│   └── VSWR.csv
+│
+└── README.md
+```
+
+## Design Methodology
+
+The antenna was designed using the following workflow:
+
+1. Determine the operating frequency (10.9 GHz).
+2. Calculate initial element dimensions.
+3. Model the reflector, driven element, and directors in HFSS.
+4. Configure excitation and radiation boundaries.
+5. Generate the computational mesh.
+6. Run the electromagnetic simulation.
+7. Analyze and optimize antenna performance.
+
+## Simulation Results
+
+The following analyses were performed:
+
+- Return Loss (S11)
+- VSWR
+- Gain
+- Radiation Pattern
+- Directivity
+- Surface Current Distribution
+
+Example simulation outputs are available in the **Images** folder, while exported numerical data can be found in the **Results** folder.
+
+## Applications
+
+This antenna design can be applied to:
+
+- Point-to-point wireless communication
+- Microwave communication systems
+- RF experimentation
+- Amateur radio
+- Educational antenna design studies
+
+## Future Improvements
+
+Potential enhancements include:
+
+- Additional directors for increased gain.
+- Parametric optimization.
+- Array implementation.
+- Fabrication and experimental validation.
+- Comparison with other directional antenna designs.
